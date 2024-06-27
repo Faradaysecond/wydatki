@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2e2e2e;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: .3s;
+}
+button:hover{
+    background-color: orange;
+}
+.none{
+    display: none !important;
+}
+.wrapper{
+    margin: 100px auto;
+    width: 80%;
+}
+.msg-error{
+    padding: 10px 20px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 10%;
+    left: 50%;
+    background-color: rgb(210, 53, 53);
+    border-radius: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel{
+    margin: 50px 10px;
+    display: flex;
+    width: 50%;
+}
+.second-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.sum-area{
+    border: 2px solid white;
+    padding: 20px 40px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+
+.input-area{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area label{
+    margin: 20px 0 10px;
+}
+.input-area input, select{
+    padding: 5px;
+}
+.title{
+    font-size: 30px;
+}
+.title i {
+    margin-right: 10px;
+}
+
+.save-income, .save-expense, .income-swap-btn, .expense-swap-btn, .clean-all{
+    padding: 5px 10px;
+    margin-top: 20px;
+    width: fit-content;
+}
+.area-bar{
+    display: flex;
+}
+.income-area, .expense-area{
+    margin: 50px 10px;
+    padding: 10px;
+    width: 500px;
+    border: 2px solid white;
+}
+
+.income-item, .expense-item{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total{
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+
+.delate-btn{
+    padding: 5px;
+
+}

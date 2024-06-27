@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/42ee4be07a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class=" msg-error none">
+        <p>W polu przychodu muszą znajdować się tylko cyfry</p>
+    </div>
+   
+<div class="wrapper">
+    
+    
+    <button class="income-swap-btn">Przychód</button>
+    <button class="expense-swap-btn">Wydatek</button>
+    
+    <div class="header">
+        
+        <div class="panel">
+            <div class="input-area income-part ">
+                <p class="title"><i class="fa-solid fa-piggy-bank"></i> Przychód</p>
+                <label for="income">Kwota</label>
+                <input type="number" class="income"  required>
+                <label for="data-inc">Data</label>
+                <input type="date"  class="date-inc" required>
+                <label for="from-inc">Źródło</label>
+                <select type="text"  class="from-inc">
+                    <option value="Wypłata">Wypłata</option>
+                    <option value="Faktura">Faktura</option>
+                    <option value="Zwrot">Zwrot</option>
+                    <option value="Wygrana">Wygrana</option>
+                    <option value="Pożyczka">Pożyczka</option>
+                    <option value="Inne">Inne</option>
+                </select>
+                <button class="save-income">zapisz</button>
+            </div>
+        
+            <div class="input-area expense-part none">
+                <p class="title"><i class="fa-solid fa-sack-xmark"></i>Wydatek</p>
+                <label for="expense">Kwota</label>
+                <input type="number" class="expense" required>
+                <label for="data">Data</label>
+                <input type="date" class="date-exp" required>
+                <label for="from">Powód</label>
+                <select type="text"  class="from-exp">
+                    <option value="Zakupy spożywcze">Zakupy spożywcze</option>
+                    <option value="Paliwo">Paliwo</option>
+                    <option value="Media">Media</option>
+                    <option value="Rachunki">Rachunki</option>
+                    <option value="Fanaberie">Fanaberie</option> 
+                    <option value="Inne">Inne</option> 
+                </select>
+                <button class="save-expense">zapisz</button>
+            </div>
+        </div>
+
+        <div class="second-panel">
+            <div class="sum-area">
+                <h2>Bilans</h2>
+                <p class="total"></p>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div class="area-bar">
+    <div class="income-area">
+        <h2>Przychody</h2>
+        <br>
+        <p>Lista</p>
+        <br>
+        <div class="income-item">
+        </div>
+    </div>
+    <div class="expense-area">
+        <h2>Wydatki</h2>
+        <br>
+        <p>Lista</p>
+        <br>
+        <div class="expense-item">
+        </div>
+    </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>
